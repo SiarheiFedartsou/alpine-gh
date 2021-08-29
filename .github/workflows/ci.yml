@@ -16,9 +16,4 @@ jobs:
       - uses: actions/checkout@v2
       - uses: docker/build-push-action@v2
         with:
-          registry: ghcr.io
-          push: false
-          username: "SiarheiFedartsou"
-          password: ${{ secrets.PAT }}
-          repository: SiarheiFedartsou/alpine-gh
-          tags: latest
+          context: .
